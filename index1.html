@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id="0">
+    This is the first page
+    <br>
+    <input type="submit" value="full screen (SHIFT + ENTER)" onclick="openFullscreen()">
+    <br>
+    <input type="submit" value="exit full screen (ESC)" onclick="closeFullscreen()">
+    <br>
+    <button onclick="loadContent('slides/1.html')">Page 1</button>
+    Use ARROWKEY to move between the slides
+  </div>
+  <div id="1" hidden>
+    I will say hello world in the console
+  </div>
+  <div id="2" hidden>
+    I'll repeat what you say:
+    <form id="2.form" method="post">
+      <input type="text" id="2.form.text">
+      <input type="submit">
+    </form>
+    Form submission
+  </div>
+  <div id="3" hidden>
+    I will display some images using an array<br>
+    <div id="3.scriptModDiv"></div>
+  </div>
+  <div id="4" hidden>
+    I will sort an array<br>
+  </div>
+  <div id="5" hidden>
+    I'll repeat what you say:
+    <form id="5.form" method="post">
+      <input type="radio" id="5.form.1" name="1" value="1">
+      <label for="html">1</label><br>
+      <input type="radio" id="5.form.2" name="2" value="2">
+      <label for="css">2</label><br>
+      <input type="radio" id="5.form.3" name="3" value="3">
+      <label for="javascript">3</label><br>
+      <input type="submit">
+    </form>
+    Form submission
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
